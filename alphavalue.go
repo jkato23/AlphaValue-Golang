@@ -6,7 +6,6 @@ import (
 	"os"
 	"strings"
 	"unicode"
-	//"strconv"
 )
 
 func main() {
@@ -22,7 +21,6 @@ func main() {
 	statement = strings.TrimSuffix(statement, "\n")
 	for i := 0; i < len(statement); i++ {
 		if unicode.IsLetter(rune(statement[i])) == true {
-			//concatenated := strconv.Itoa(int (result[i] - 96)) + " "
 			fmt.Println((statement[i]) - 96)
 		} else {
 			fmt.Println(string(statement[i]) + " ")
